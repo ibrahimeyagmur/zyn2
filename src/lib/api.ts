@@ -1,7 +1,7 @@
 // Tüm API çağrıları buradan yapılır
 // Backend URL'ini değiştirmek için sadece bu dosyayı güncelleyin
 
-const BASE_URL = (process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000") + "/api";
+const BASE_URL = (process.env.NEXT_PUBLIC_API_URL || "https://api.berilisdesign.com.tr") + "/api";
 
 async function get<T>(path: string): Promise<T> {
   const res = await fetch(`${BASE_URL}${path}`, { cache: "no-store" });
