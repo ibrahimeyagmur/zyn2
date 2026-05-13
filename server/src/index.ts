@@ -19,22 +19,8 @@ import whatsappRoutes from "./routes/whatsapp";
 const app = express();
 const PORT = 5000;
 
-const ALLOWED_ORIGINS = [
-  "http://localhost:3000",
-  "http://localhost:3001",
-  "https://berilisdesign.com.tr",
-  "https://www.berilisdesign.com.tr",
-  "https://api.berilisdesign.com.tr",
-];
-
 const corsOptions = {
-  origin: (origin: string | undefined, callback: (err: Error | null, allow?: boolean) => void) => {
-    if (!origin || ALLOWED_ORIGINS.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error(`CORS: ${origin} izinli değil`));
-    }
-  },
+  origin: true,
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization", "X-Requested-With"],
   exposedHeaders: ["Set-Cookie"],
