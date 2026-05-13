@@ -3,6 +3,10 @@
 # dependencies
 /node_modules
 server/node_modules
+
+# whatsapp session & cache
+server/.wwebjs_auth/
+server/.wwebjs_cache/
 /.pnp
 .pnp.*
 .yarn/*
