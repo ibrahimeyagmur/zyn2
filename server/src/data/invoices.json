@@ -1,0 +1,101 @@
+[
+  {
+    "id": "inv-1778604273535",
+    "no": "FAT-1004",
+    "date": "2026-05-12T16:44:33.535Z",
+    "status": "odendi",
+    "notes": "",
+    "dueDate": null,
+    "customerId": "MUS-566715",
+    "customerName": "Kayra Kasapoğlu",
+    "customerEmail": "kayra@gmail.com",
+    "invoiceType": "bireysel",
+    "items": [
+      {
+        "id": "line-1778604256395-0.04818114680548313",
+        "name": "saldgfkasldgklasdg",
+        "qty": 1,
+        "unitPrice": 150,
+        "vatRate": 0
+      }
+    ],
+    "subtotal": 150,
+    "vatTotal": 0,
+    "total": 150
+  },
+  {
+    "id": "inv-1778603774462",
+    "no": "FAT-1003",
+    "customerId": "MUS-566715",
+    "customerName": "Kayra Kasapoğlu",
+    "customerEmail": "kayra@gmail.com",
+    "invoiceType": "bireysel",
+    "isBakiyeYukleme": true,
+    "items": [
+      {
+        "id": "item-1778603774462",
+        "name": "Bakiye Yükleme",
+        "qty": 1,
+        "unitPrice": 999999,
+        "vatRate": 0
+      }
+    ],
+    "subtotal": 999999,
+    "vatTotal": 0,
+    "total": 999999,
+    "status": "odendi",
+    "dueDate": null,
+    "notes": "",
+    "date": "2026-05-12T16:36:14.462Z"
+  },
+  {
+    "id": "inv-1778603643160",
+    "no": "FAT-1002",
+    "customerId": "MUS-566715",
+    "customerName": "Kayra Kasapoğlu",
+    "customerEmail": "kayra@gmail.com",
+    "invoiceType": "bireysel",
+    "isBakiyeYukleme": true,
+    "items": [
+      {
+        "id": "item-1778603643160",
+        "name": "borç",
+        "qty": 1,
+        "unitPrice": 20,
+        "vatRate": 0
+      }
+    ],
+    "subtotal": 20,
+    "vatTotal": 0,
+    "total": 20,
+    "status": "odendi",
+    "dueDate": null,
+    "notes": "borç",
+    "date": "2026-05-12T16:34:03.160Z"
+  },
+  {
+    "id": "inv-1778603595952",
+    "no": "FAT-1001",
+    "customerId": "MUS-566715",
+    "customerName": "Kayra Kasapoğlu",
+    "customerEmail": "kayra@gmail.com",
+    "invoiceType": "bireysel",
+    "isBakiyeYukleme": true,
+    "items": [
+      {
+        "id": "item-1778603595952",
+        "name": "Bakiye Yükleme",
+        "qty": 1,
+        "unitPrice": 50,
+        "vatRate": 0
+      }
+    ],
+    "subtotal": 50,
+    "vatTotal": 0,
+    "total": 50,
+    "status": "odendi",
+    "dueDate": null,
+    "notes": "",
+    "date": "2026-05-12T16:33:15.952Z"
+  }
+]

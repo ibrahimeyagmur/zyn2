@@ -1,0 +1,38 @@
+[
+  {
+    "id": "svc-1778603756630",
+    "ad": "Sosyal Medya Afişi",
+    "aciklama": "",
+    "fiyat": 200,
+    "birim": "proje",
+    "kategori": "Sosyal Medya",
+    "aktif": true,
+    "ekBilgiler": [
+      {
+        "id": "alan-1778603725871",
+        "label": "Firma adı",
+        "type": "text",
+        "required": true,
+        "options": []
+      },
+      {
+        "id": "alan-1778603732629",
+        "label": "Ne projesi",
+        "type": "textarea",
+        "required": true,
+        "options": []
+      },
+      {
+        "id": "alan-1778603741033",
+        "label": "Kurumsal firma mı",
+        "type": "select",
+        "required": true,
+        "options": [
+          "evet",
+          "hayır"
+        ]
+      }
+    ],
+    "createdAt": "2026-05-12T16:35:56.630Z"
+  }
+]

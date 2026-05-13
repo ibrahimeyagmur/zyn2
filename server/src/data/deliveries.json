@@ -1,0 +1,30 @@
+[
+  {
+    "id": "dlv-1778604158065",
+    "orderId": "SIP-831206",
+    "customerId": "MUS-566715",
+    "customerName": "Kayra Kasapoğlu",
+    "ad": "Sosyal medya hizmeti",
+    "aciklama": "",
+    "tur": "Sosyal Medya Afişi",
+    "dosyaUrl": "/uploads/deliveries/1778604158050_Pulkadot-LogoSunumu.zip",
+    "dosyaAd": "Pulkadot-LogoSunumu.zip",
+    "dosyaBoyut": 4717039,
+    "dosyaTip": "application/x-zip-compressed",
+    "createdAt": "2026-05-12T16:42:38.065Z"
+  },
+  {
+    "id": "dlv-1778604178643",
+    "orderId": "SIP-831206",
+    "customerId": "MUS-566715",
+    "customerName": "Kayra Kasapoğlu",
+    "ad": "logo",
+    "aciklama": "",
+    "tur": "Logo",
+    "dosyaUrl": "/uploads/deliveries/1778604178640_ChatGPT_Image_10_May_2026_21_07_03.png",
+    "dosyaAd": "ChatGPT Image 10 May 2026 21_07_03.png",
+    "dosyaBoyut": 690771,
+    "dosyaTip": "image/png",
+    "createdAt": "2026-05-12T16:42:58.643Z"
+  }
+]

@@ -1,0 +1,115 @@
+[
+  {
+    "id": "SUP-1778604468983",
+    "customerId": "MUS-566715",
+    "customerName": "Kayra Kasapoğlu",
+    "customerEmail": "kayra@gmail.com",
+    "konu": "asdgasdgasdg",
+    "mesaj": "asdgasdgasdgasdg",
+    "oncelik": "yuksek",
+    "durum": "acik",
+    "createdAt": "2026-05-12T16:47:48.983Z",
+    "updatedAt": "2026-05-12T16:47:48.983Z",
+    "mesajlar": [
+      {
+        "id": "MSG-1778604468983",
+        "gonderen": "musteri",
+        "mesaj": "asdgasdgasdgasdg",
+        "dosyalar": [],
+        "tarih": "2026-05-12T16:47:48.983Z"
+      }
+    ]
+  },
+  {
+    "id": "TKT-831207",
+    "customerId": "MUS-566715",
+    "customerName": "Kayra Kasapoğlu",
+    "konu": "Sipariş: Sosyal Medya Afişi",
+    "mesaj": "Yeni sipariş: **Sosyal Medya Afişi**\n\nSipariş No: SIP-831206\n\n**Ek Bilgiler:**\n- Firma adı: asdgasdgasdg\n- Ne projesi: asfasdg\n- Kurumsal firma mı: evet",
+    "kategori": "Sipariş",
+    "oncelik": "acil",
+    "durum": "cozumlendi",
+    "createdAt": "2026-05-12T16:37:11.207Z",
+    "updatedAt": "2026-05-12T16:43:42.580Z",
+    "mesajlar": [
+      {
+        "id": "MSG-1778604033320",
+        "gonderen": "admin",
+        "mesaj": "Merhaba",
+        "dosyalar": [],
+        "tarih": "2026-05-12T16:40:33.320Z"
+      },
+      {
+        "id": "MSG-1778604062992",
+        "gonderen": "musteri",
+        "mesaj": "bir proje yaptırmak istiyormu.",
+        "dosyalar": [],
+        "tarih": "2026-05-12T16:41:02.992Z"
+      },
+      {
+        "id": "MSG-1778604063662",
+        "gonderen": "musteri",
+        "mesaj": "sglasdgasdg",
+        "dosyalar": [],
+        "tarih": "2026-05-12T16:41:03.662Z"
+      },
+      {
+        "id": "MSG-1778604068094",
+        "gonderen": "musteri",
+        "mesaj": "",
+        "dosyalar": [
+          {
+            "name": "ChatGPT Image 10 May 2026 22_11_38.png",
+            "url": "/uploads/support/1778604068082_ChatGPT_Image_10_May_2026_22_11_38.png",
+            "size": 2121656,
+            "type": "image/png"
+          }
+        ],
+        "tarih": "2026-05-12T16:41:08.094Z"
+      },
+      {
+        "id": "MSG-1778604083910",
+        "gonderen": "musteri",
+        "mesaj": "pğdkgfasldg",
+        "dosyalar": [],
+        "tarih": "2026-05-12T16:41:23.910Z"
+      },
+      {
+        "id": "MSG-1778604085669",
+        "gonderen": "musteri",
+        "mesaj": "asdiglşasdigasd",
+        "dosyalar": [],
+        "tarih": "2026-05-12T16:41:25.669Z"
+      },
+      {
+        "id": "MSG-1778604086052",
+        "gonderen": "musteri",
+        "mesaj": "asdgişasdgi",
+        "dosyalar": [],
+        "tarih": "2026-05-12T16:41:26.052Z"
+      },
+      {
+        "id": "MSG-1778604086405",
+        "gonderen": "musteri",
+        "mesaj": "asdg",
+        "dosyalar": [],
+        "tarih": "2026-05-12T16:41:26.405Z"
+      },
+      {
+        "id": "MSG-1778604127156",
+        "gonderen": "admin",
+        "mesaj": "",
+        "dosyalar": [
+          {
+            "name": "Pulkadot-LogoSunumu.zip",
+            "url": "/uploads/support/1778604127070_Pulkadot-LogoSunumu.zip",
+            "size": 4717039,
+            "type": "application/x-zip-compressed"
+          }
+        ],
+        "tarih": "2026-05-12T16:42:07.156Z"
+      }
+    ],
+    "orderId": "SIP-831206"
+  }
+]

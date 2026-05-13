@@ -1,0 +1,57 @@
+[
+  {
+    "id": "MUS-566715",
+    "createdAt": "2026-05-12T16:32:46.715Z",
+    "durum": "aktif",
+    "balance": 999879,
+    "balanceHistory": [
+      {
+        "id": "BAL-03831205",
+        "type": "cikar",
+        "amount": 190,
+        "previousBalance": 1000069,
+        "newBalance": 999879,
+        "note": "Sipariş ödemesi (10 TL kupon indirimi uygulandı)",
+        "date": "2026-05-12T16:37:11.205Z"
+      },
+      {
+        "id": "BAL-03774462",
+        "type": "ekle",
+        "amount": 999999,
+        "previousBalance": 70,
+        "newBalance": 1000069,
+        "note": "",
+        "date": "2026-05-12T16:36:14.462Z"
+      },
+      {
+        "id": "BAL-03643160",
+        "type": "ekle",
+        "amount": 20,
+        "previousBalance": 50,
+        "newBalance": 70,
+        "note": "borç",
+        "date": "2026-05-12T16:34:03.160Z"
+      },
+      {
+        "id": "BAL-03595951",
+        "type": "ekle",
+        "amount": 50,
+        "previousBalance": 0,
+        "newBalance": 50,
+        "note": "",
+        "date": "2026-05-12T16:33:15.951Z"
+      }
+    ],
+    "ad": "Kayra Kasapoğlu",
+    "email": "kayra@gmail.com",
+    "telefon": "",
+    "sirket": "Amın Oğlu A.Ş",
+    "sehir": "Bursa",
+    "tcNo": "",
+    "vergiNo": "",
+    "vergiDairesi": "",
+    "kaynak": "direkt",
+    "notlar": "",
+    "passwordHash": "hash_1d"
+  }
+]

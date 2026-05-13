@@ -1,0 +1,49 @@
+[
+  {
+    "id": "cf-1778603595952",
+    "type": "gelir",
+    "amount": 50,
+    "category": "Bakiye Ekleme Geliri",
+    "description": "Kayra Kasapoğlu bakiye yüklemesi",
+    "date": "2026-05-12",
+    "meta": {
+      "customerId": "MUS-566715",
+      "customerName": "Kayra Kasapoğlu",
+      "balanceHistoryId": "BAL-03595951"
+    }
+  },
+  {
+    "id": "cf-1778603643161",
+    "type": "gelir",
+    "amount": 20,
+    "category": "Bakiye Ekleme Geliri",
+    "description": "Kayra Kasapoğlu – borç",
+    "date": "2026-05-12",
+    "meta": {
+      "customerId": "MUS-566715",
+      "customerName": "Kayra Kasapoğlu",
+      "balanceHistoryId": "BAL-03643160"
+    }
+  },
+  {
+    "id": "cf-1778603774463",
+    "type": "gelir",
+    "amount": 999999,
+    "category": "Bakiye Ekleme Geliri",
+    "description": "Kayra Kasapoğlu bakiye yüklemesi",
+    "date": "2026-05-12",
+    "meta": {
+      "customerId": "MUS-566715",
+      "customerName": "Kayra Kasapoğlu",
+      "balanceHistoryId": "BAL-03774462"
+    }
+  },
+  {
+    "id": "cf-1778604300358",
+    "date": "2026-05-12",
+    "type": "gider",
+    "amount": 50000,
+    "category": "Kira",
+    "description": ""
+  }
+]
