@@ -36,7 +36,7 @@ export default function CustomerInvoicesPage() {
   const [selected, setSelected] = useState<Invoice | null>(null);
 
   useEffect(() => {
-    fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000"}/api/customer/invoices`, { credentials: "include" })
+    fetch(`${process.env.NEXT_PUBLIC_API_URL || "https://api.berilisdesign.com.tr"}/api/customer/invoices`, { credentials: "include" })
       .then((r) => r.json())
       .then((d) => setInvoices(Array.isArray(d) ? d : []))
       .catch(console.error)

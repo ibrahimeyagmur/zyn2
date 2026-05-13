@@ -128,7 +128,7 @@ function CouponDrawer({ open, onClose, coupon, onSaved }: {
         isPublic: form.isPublic,
         durum: form.durum,
       };
-      const url = isEdit ? `${process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000"}/api/coupons/${coupon!.id}` : `${process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000"}/api/coupons`;
+      const url = isEdit ? `${process.env.NEXT_PUBLIC_API_URL || "https://api.berilisdesign.com.tr"}/api/coupons/${coupon!.id}` : `${process.env.NEXT_PUBLIC_API_URL || "https://api.berilisdesign.com.tr"}/api/coupons`;
       const res = await fetch(url, {
         method: isEdit ? "PUT" : "POST",
         headers: { "Content-Type": "application/json" },
@@ -317,7 +317,7 @@ function AssignDialog({ coupon, customers, onClose, onUpdated }: {
     try {
       const endpoint = isAssigned ? "unassign" : "assign";
       const body = isAssigned ? { customerId } : { customerIds: [customerId] };
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000"}/api/coupons/${coupon.id}/${endpoint}`, {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || "https://api.berilisdesign.com.tr"}/api/coupons/${coupon.id}/${endpoint}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body),
@@ -591,8 +591,8 @@ export default function MarketingPage() {
 
   useEffect(() => {
     Promise.all([
-      fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000"}/api/coupons`).then((r) => r.json()),
-      fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000"}/api/customers`).then((r) => r.json()),
+      fetch(`${process.env.NEXT_PUBLIC_API_URL || "https://api.berilisdesign.com.tr"}/api/coupons`).then((r) => r.json()),
+      fetch(`${process.env.NEXT_PUBLIC_API_URL || "https://api.berilisdesign.com.tr"}/api/customers`).then((r) => r.json()),
     ]).then(([c, cu]) => {
       setCoupons(c as Coupon[]);
       setCustomers(cu as Customer[]);
@@ -617,7 +617,7 @@ export default function MarketingPage() {
   async function handleToggle(coupon: Coupon) {
     const newDurum = coupon.durum === "aktif" ? "pasif" : "aktif";
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000"}/api/coupons/${coupon.id}`, {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || "https://api.berilisdesign.com.tr"}/api/coupons/${coupon.id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ durum: newDurum }),
@@ -634,7 +634,7 @@ export default function MarketingPage() {
   async function handleDelete() {
     if (!deleteTarget) return;
     try {
-      await fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000"}/api/coupons/${deleteTarget.id}`, { method: "DELETE" });
+      await fetch(`${process.env.NEXT_PUBLIC_API_URL || "https://api.berilisdesign.com.tr"}/api/coupons/${deleteTarget.id}`, { method: "DELETE" });
       setCoupons((prev) => prev.filter((c) => c.id !== deleteTarget.id));
       toastError("Kupon silindi", deleteTarget.code);
     } catch {

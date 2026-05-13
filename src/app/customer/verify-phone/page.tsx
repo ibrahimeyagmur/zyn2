@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { Phone, Shield, ArrowLeft, Loader2, CheckCircle } from "lucide-react";
 
-const API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+const API = process.env.NEXT_PUBLIC_API_URL || "https://api.berilisdesign.com.tr";
 
 export default function VerifyPhonePage() {
   const router = useRouter();

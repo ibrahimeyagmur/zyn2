@@ -46,7 +46,7 @@ export default function AdminSupportPage() {
   const [filterPriority, setFilterPriority] = useState<string>("hepsi");
 
   useEffect(() => {
-    fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000"}/api/support`, { credentials: "include" })
+    fetch(`${process.env.NEXT_PUBLIC_API_URL || "https://api.berilisdesign.com.tr"}/api/support`, { credentials: "include" })
       .then((r) => r.json())
       .then((d) => setTickets(Array.isArray(d) ? d : []))
       .catch(console.error)

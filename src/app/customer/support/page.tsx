@@ -50,7 +50,7 @@ export default function CustomerSupportPage() {
   }
 
   useEffect(() => {
-    fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000"}/api/customer/support`, {
+    fetch(`${process.env.NEXT_PUBLIC_API_URL || "https://api.berilisdesign.com.tr"}/api/customer/support`, {
       credentials: "include",
       headers: authHeaders(),
     })
@@ -66,7 +66,7 @@ export default function CustomerSupportPage() {
     setFormError("");
     setSubmitting(true);
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000"}/api/customer/support`, {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || "https://api.berilisdesign.com.tr"}/api/customer/support`, {
         method: "POST",
         headers: authHeaders({ "Content-Type": "application/json" }),
         credentials: "include",

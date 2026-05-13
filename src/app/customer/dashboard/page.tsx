@@ -44,9 +44,9 @@ export default function CustomerDashboardPage() {
     if (info) { try { setCustomer(JSON.parse(info)); } catch { /* ignore */ } }
 
     Promise.all([
-      fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000"}/api/customer/invoices`, { credentials: "include", headers: authHeaders() }).then((r) => r.json()),
-      fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000"}/api/customer/orders`, { credentials: "include", headers: authHeaders() }).then((r) => r.json()),
-      fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000"}/api/customer/support`, { credentials: "include", headers: authHeaders() }).then((r) => r.json()),
+      fetch(`${process.env.NEXT_PUBLIC_API_URL || "https://api.berilisdesign.com.tr"}/api/customer/invoices`, { credentials: "include", headers: authHeaders() }).then((r) => r.json()),
+      fetch(`${process.env.NEXT_PUBLIC_API_URL || "https://api.berilisdesign.com.tr"}/api/customer/orders`, { credentials: "include", headers: authHeaders() }).then((r) => r.json()),
+      fetch(`${process.env.NEXT_PUBLIC_API_URL || "https://api.berilisdesign.com.tr"}/api/customer/support`, { credentials: "include", headers: authHeaders() }).then((r) => r.json()),
     ])
       .then(([inv, ord, sup]) => {
         setInvoices(Array.isArray(inv) ? inv : []);

@@ -121,7 +121,7 @@ function BalanceDialog({ customer, onClose, onUpdated }: {
     submittingRef.current = true;
     setLoading(true);
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000"}/api/customers/${customer.id}/balance`, {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || "https://api.berilisdesign.com.tr"}/api/customers/${customer.id}/balance`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ type, amount: parsed, note, invoiceType }),
@@ -355,8 +355,8 @@ function CustomerDrawer({ open, onClose, customer, onSaved }: {
     setLoading(true);
     try {
       const url = isEdit
-        ? `${process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000"}/api/customers/${customer!.id}`
-        : `${process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000"}/api/customers`;
+        ? `${process.env.NEXT_PUBLIC_API_URL || "https://api.berilisdesign.com.tr"}/api/customers/${customer!.id}`
+        : `${process.env.NEXT_PUBLIC_API_URL || "https://api.berilisdesign.com.tr"}/api/customers`;
       const body: Record<string, unknown> = { ...form };
       if (isEdit && !form.password) delete body.password;
 
@@ -583,7 +583,7 @@ export default function CustomersPage() {
   const [expandedId, setExpandedId] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000"}/api/customers`)
+    fetch(`${process.env.NEXT_PUBLIC_API_URL || "https://api.berilisdesign.com.tr"}/api/customers`)
       .then((r) => r.json())
       .then((data) => setCustomers(data as Customer[]))
       .catch(console.error)
@@ -617,7 +617,7 @@ export default function CustomersPage() {
     if (!deleteTarget) return;
     const name = deleteTarget.ad;
     try {
-      await fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000"}/api/customers/${deleteTarget.id}`, { method: "DELETE" });
+      await fetch(`${process.env.NEXT_PUBLIC_API_URL || "https://api.berilisdesign.com.tr"}/api/customers/${deleteTarget.id}`, { method: "DELETE" });
       setCustomers((prev) => prev.filter((c) => c.id !== deleteTarget.id));
       toastError("Müşteri silindi", `${name} sistemden kaldırıldı`);
     } catch {

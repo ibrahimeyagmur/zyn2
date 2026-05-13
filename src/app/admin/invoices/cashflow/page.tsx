@@ -94,7 +94,7 @@ function AddEntryDialog({ onClose, onAdded }: {
     if (!form.amount || parseFloat(form.amount) <= 0) { setError("Geçerli bir tutar girin"); return; }
     setLoading(true);
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000"}/api/invoices/cashflow/entries`, {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL || "https://api.berilisdesign.com.tr"}/api/invoices/cashflow/entries`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ ...form, amount: parseFloat(form.amount) }),
@@ -193,7 +193,7 @@ export default function CashflowPage() {
   const [filterType, setFilterType] = useState<"hepsi" | "gelir" | "gider">("hepsi");
 
   useEffect(() => {
-    fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000"}/api/invoices/cashflow`)
+    fetch(`${process.env.NEXT_PUBLIC_API_URL || "https://api.berilisdesign.com.tr"}/api/invoices/cashflow`)
       .then((r) => r.json())
       .then((d) => setData(d as CashflowData))
       .catch(console.error)
@@ -212,7 +212,7 @@ export default function CashflowPage() {
 
   async function handleDelete(id: string) {
     try {
-      await fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000"}/api/invoices/cashflow/entries/${id}`, { method: "DELETE" });
+      await fetch(`${process.env.NEXT_PUBLIC_API_URL || "https://api.berilisdesign.com.tr"}/api/invoices/cashflow/entries/${id}`, { method: "DELETE" });
       setData((prev) => {
         if (!prev) return prev;
         const removed = prev.entries.find((e) => e.id === id);

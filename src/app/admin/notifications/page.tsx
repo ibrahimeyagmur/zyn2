@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Bell, Check, Trash2, X, Phone, Save, MessageCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-const API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+const API = process.env.NEXT_PUBLIC_API_URL || "https://api.berilisdesign.com.tr";
 
 interface Notif {
   id: string;

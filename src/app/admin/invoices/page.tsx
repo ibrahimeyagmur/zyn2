@@ -10,7 +10,7 @@ import {
 import { cn } from "@/lib/utils";
 import { useToast } from "@/components/ui/toast";
 
-const API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+const API = process.env.NEXT_PUBLIC_API_URL || "https://api.berilisdesign.com.tr";
 
 // ─── Tipler ───────────────────────────────────────────────────────────────────
 interface InvoiceItem {

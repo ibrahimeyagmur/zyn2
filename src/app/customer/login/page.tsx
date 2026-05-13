@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 
 import { Eye, EyeOff } from "lucide-react";
 
-const API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+const API = process.env.NEXT_PUBLIC_API_URL || "https://api.berilisdesign.com.tr";
 import { useTranslation } from "@/lib/i18n";
 
 export default function CustomerLoginPage() {

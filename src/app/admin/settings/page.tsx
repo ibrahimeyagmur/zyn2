@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Phone, MessageCircle, Save, Loader2, CheckCircle, Wifi, WifiOff } from "lucide-react";
 import { useToast } from "@/components/ui/toast";
 
-const API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000";
+const API = process.env.NEXT_PUBLIC_API_URL || "https://api.berilisdesign.com.tr";
 
 export default function SettingsPage() {
   const toast = useToast();
