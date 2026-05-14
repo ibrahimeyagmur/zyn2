@@ -42,7 +42,10 @@ export default function CustomerLoginPage() {
         return;
       }
 
-      if (data.token) localStorage.setItem("customer_token", data.token);
+      if (data.token) {
+        localStorage.setItem("customer_token", data.token);
+        document.cookie = `customer_token=${data.token}; path=/; max-age=${60 * 60 * 24 * 7}`;
+      }
       if (data.customer) localStorage.setItem("customer_info", JSON.stringify(data.customer));
 
       router.replace("/customer/dashboard");
